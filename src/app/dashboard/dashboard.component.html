@@ -1,0 +1,109 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      <div class="row">
+        <div class="col">
+          <img src="https://firebasestorage.googleapis.com/v0/b/governus-803f2.appspot.com/o/curve.jpeg?alt=media&token=6c1f81eb-eeca-4f95-a5da-c89fc3f007f9" alt="The Startup Curve"
+      class="img-fluid">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col py-4">
+          <h5 class="text-center pb-3">Actividades</h5>
+          <app-activities></app-activities>
+        </div>
+        <div class="col py-4">
+          <h5 class="text-center pb-3">Retroalimentación</h5>
+          <div class="row">
+            <div class="col">
+              <app-progress-circle [progress]="75" [color]="'yellow'" author="Ana"
+              message="'Buena idea la que te dió el cliente, qué te parece si...'"></app-progress-circle>
+            </div>
+            <div class="col">
+              <app-progress-circle [progress]="90" [color]="'blue'" author="Juan"
+              message="'Yo creo que deberías mejorar la campaña de promoción'"></app-progress-circle>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-4 py-5">
+      <div class="row">
+        <div class="col">
+          <h4 class="text-center">Buenos días, {{ user_info.name }}</h4>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col">
+          <app-reloj></app-reloj>
+        </div>
+      </div>
+      <div class="row pb-2">
+        <div class="col">
+          <h5 class="text-center">{{ phrase }}</h5>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col py-2">
+          <h5 class="text-center pb-3">Notificaciones</h5>
+          <app-notifications></app-notifications>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-7">
+      <img src="https://4.bp.blogspot.com/-zZqtJwMz1Qk/VvuI_dwONII/AAAAAAAACgI/uIhcPEHn4dsKC3bYbA8F1ympFD8b-4gFQ/w1200-h630-p-k-no-nu/1.jpg" alt="The Startup Curve"
+      class="img-fluid">
+    </div>
+    <div class="col my-auto">
+      <div class="row">
+        <div class="col">
+          <h4 class="text-center">Buenos días, {{ user_info.name }}</h4>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col">
+          <app-reloj></app-reloj>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5 class="text-center">Todo lo que necesitas para ser feliz se encuentra al otro lado de tus miedo</h5>
+        </div>
+      </div>
+      <div class="row"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col py-4">
+      <h5 class="text-center pb-3">Actividades</h5>
+      <app-activities></app-activities>
+    </div>
+    <div class="col py-4">
+      <h5 class="text-center pb-3">Retroalimentación</h5>
+      <div class="row">
+        <div class="col">
+          <app-progress-circle [progress]="75" [color]="'yellow'" author="Ana"
+          message="'Buena idea la que te dió el cliente, qué te parece si...'"></app-progress-circle>
+        </div>
+        <div class="col">
+          <app-progress-circle [progress]="90" [color]="'blue'" author="Juan"
+          message="'Yo creo que deberías mejorar la campaña de promoción'"></app-progress-circle>
+        </div>
+      </div>
+    </div>
+    <div class="col py-4">
+      <h5 class="text-center pb-3">Notificaciones</h5>
+      <app-notifications></app-notifications>
+    </div>
+  </div>
+</div> -->

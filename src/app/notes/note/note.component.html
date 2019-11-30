@@ -1,0 +1,24 @@
+<div class="card" *ngIf="type === 'titeim'" [ngClass]="color">
+  <img [src]="image" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{ title }}</h5>
+    <p class="card-text">{{ text }}</p>
+    <p class="card-text"><small [ngClass]="{'text-light': color, 'text-muted': !color}">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+<div class="card" *ngIf="type === 'im'" [ngClass]="color">
+  <img [src]="image" class="card-img-top" alt="...">
+</div>
+<div class="card" *ngIf="type === 'tite'" [ngClass]="color">
+  <div class="card-body">
+    <h5 class="card-title">{{ title }}</h5>
+    <p class="card-text">{{ text }}</p>
+    <p class="card-text"><small [ngClass]="{'text-light': color, 'text-muted': !color}">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+<div class="card" *ngIf="type === 'te'" [ngClass]="color">
+  <div class="card-body">
+    <p class="card-text">{{ text }}</p>
+    <p class="card-text"><small [ngClass]="{'text-light': color, 'text-muted': !color}">Last updated 3 mins ago</small></p>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let activity of activities; let i = index">
+    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+      <input type="checkbox" class="custom-control-input" id="activity{{i + 1}}" (change)="onDone(i)">
+      <label class="custom-control-label" for="activity{{i + 1}}">{{ activity }}</label>
+    </div>
+  </li>
+</ul>

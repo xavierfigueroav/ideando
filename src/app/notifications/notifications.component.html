@@ -1,0 +1,8 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let notification of notifications; let i = index">
+    {{ notification }}
+    <button type="button" class="close" aria-label="Close" (click)="onDelete(i)">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </li>
+</ul>

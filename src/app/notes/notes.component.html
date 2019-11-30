@@ -1,0 +1,57 @@
+<app-header></app-header>
+<div class="container py-5">
+  <div class="row">
+    <div class="col">
+      <div class="card-columns">
+
+        <form action="">
+          <div class="form-group">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Título" #title>
+              </li>
+              <li class="list-group-item">
+                <textarea class="form-control" id="exampleInputEmail1" placeholder="Cuerpo" #text></textarea>
+              </li>
+              <li class="list-group-item">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Link a una imagen" #image>
+              </li>
+              <li class="list-group-item text-right">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="blue" name="customRadioInline" 
+                  class="custom-control-input" [(ngModel)]="color_selected" value="blue">
+                  <label class="custom-control-label text-primary" for="blue">Azul</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="orange" name="customRadioInline" 
+                  class="custom-control-input" [(ngModel)]="color_selected" value="orange">
+                  <label class="custom-control-label text-warning" for="orange">Naranja</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="green" name="customRadioInline" 
+                  class="custom-control-input" [(ngModel)]="color_selected" value="green">
+                  <label class="custom-control-label text-success" for="green">Verde</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="red" name="customRadioInline" 
+                  class="custom-control-input" [(ngModel)]="color_selected" value="red">
+                  <label class="custom-control-label text-danger" for="red">Rojo</label>
+                </div>
+                <button class="btn btn-primary" (click)="onAdd()">Agregar</button>
+              </li>
+            </ul>
+          </div>
+        </form>
+
+        <app-note  *ngFor="let note of notes"
+        [title]="note.title"
+        [text]="note.text"
+        [image]="note.image"
+        [color]="note.color"></app-note>
+
+      </div>
+    </div>
+  </div>
+  <div class="row">
+  </div>
+</div>
