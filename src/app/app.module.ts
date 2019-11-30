@@ -12,7 +12,6 @@ import { ProgressCircleComponent } from './progress-circle/progress-circle.compo
 import { ToolsComponent } from './tools/tools.component';
 import { LearningComponent } from './learning/learning.component';
 import { EnvironmentComponent } from './environment/environment.component';
-import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { EntrepreneurSigninComponent } from './entrepreneur-signin/entrepreneur-signin.component';
 import { BasicInfoComponent } from './entrepreneur-signin/basic-info/basic-info.component';
@@ -32,6 +31,7 @@ import { ChartsModule } from 'ng2-charts';
 import { UserService } from './services/user.service';
 import { RelojComponent } from './reloj/reloj.component';
 import { PhasesService } from './services/phases.service';
+import { AccountComponent } from './account/account.component';
 
 const appRoutes: Routes = [
   { 
@@ -98,12 +98,17 @@ const appRoutes: Routes = [
     path: 'tablero', 
     component: BoardComponent,
     data: { breadcrumb: 'Tablero' }
+  },
+  { 
+    path: 'cuenta', 
+    component: AccountComponent,
+    data: { breadcrumb: 'Cuenta' }
   }
 ]
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, FontAwesomeModule, RouterModule.forRoot(appRoutes), ChartsModule],
-  declarations: [ AppComponent, DashboardComponent, HeaderComponent, ProgressCircleComponent, ToolsComponent, LearningComponent, EnvironmentComponent, BreadcrumbComponent, WelcomeComponent, EntrepreneurSigninComponent, BasicInfoComponent, HardSkillsComponent, SoftSkillsComponent, BusinessInfoComponent, NotesComponent, NoteComponent, NotificationsComponent, ActivitiesComponent, BoardComponent, QuestionsComponent, RelojComponent ],
+  declarations: [ AppComponent, DashboardComponent, HeaderComponent, ProgressCircleComponent, ToolsComponent, LearningComponent, EnvironmentComponent, WelcomeComponent, EntrepreneurSigninComponent, BasicInfoComponent, HardSkillsComponent, SoftSkillsComponent, BusinessInfoComponent, NotesComponent, NoteComponent, NotificationsComponent, ActivitiesComponent, BoardComponent, QuestionsComponent, RelojComponent, AccountComponent ],
   bootstrap:    [ AppComponent ],
   providers: [NotesService, ActivitiesService, NotificationsService, UserService]
 })
