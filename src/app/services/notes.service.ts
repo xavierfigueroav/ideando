@@ -5,17 +5,17 @@ export class NotesService {
 
   notes = [
     {
-      title:"Card title", 
-      text:"This card has supporting text below as a natural lead-in to additional content.", 
+      title:"Título de nota", 
+      text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
       image: "https://definicion.mx/wp-content/uploads/2013/05/diagrama.jpg"
     },
     { image: "https://d2yoo3qu6vrk5d.cloudfront.net/images/20170211154021/falso-trump-482x320.jpg" },
     {
-      title: "Card title", 
-      text: "This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall."
+      title: "Título de nota", 
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
-      text: "This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       color: "blue"
     }
   ];
