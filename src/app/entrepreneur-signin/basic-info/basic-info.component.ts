@@ -30,7 +30,8 @@ export class BasicInfoComponent implements OnInit {
       dni: this.dni.nativeElement.value,
       email: this.email.nativeElement.value,
       password: this.password.nativeElement.value,
-      dob: this.dob.nativeElement.value
+      dob: this.dob.nativeElement.value,
+      photo: this.photo || this.default_photo
     };
   }
 
